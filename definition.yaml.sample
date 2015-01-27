@@ -1,0 +1,41 @@
+my_ases:
+  - 64496
+  - 64497
+
+router_mapping:
+  192.0.2.1:
+    name: "jp-tokyo"
+    interfaces:
+      100: "transit-1"
+      200: "transit-2"
+      300: "ix-1"
+  192.0.2.2:
+    name: "jp-tokyo"
+    interfaces:
+      150: "transit-1"
+      250: "transit-2"
+      350: "transit-3"
+  192.0.2.11:
+    name: "jp-osaka"
+    interfaces:
+      111: "transit-a"
+      222: "private-x"
+  192.0.2.12:
+    name: "jp-osaka"
+    interfaces:
+      111: "transit-b"
+      222: "private-y"
+  192.0.2.21:
+    name: "us-sanjose"
+    interfaces:
+      500: "transit-i"
+      600: "transit-j"
+  192.0.2.22:
+    name: "us-sanjose"
+    interfaces:
+      500: "transit-k"
+      600: "ix-i"
+
+ipaddr_asn_mapping:
+  198.51.100.0/24: 65536
+  203.0.113.0/24: 65537
